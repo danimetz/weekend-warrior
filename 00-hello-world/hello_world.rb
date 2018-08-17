@@ -1,9 +1,8 @@
 
-def hello_world(name: '')
-  puts "Hello what is your name?"
+def hello_world(name = '')
   if name == ''
-    puts "Hello, World!"
+    return "Hello, World!"
   else
-  puts "Hello, #{name}!"
+    return "Hello, #{name}!"
   end
 end
