@@ -15,13 +15,14 @@ class Robot
     @name = rand_name.join
   end
 
-  # def name
-  #   rand_name = (0..1).map { (65 + rand(26)).chr }
-  #   3.times do |num|
-  #     rand_name << rand(10)
-  #   end
-  #   return rand_name.join
-  # end
+  def reset
+    rand_name = (0..1).map { (65 + rand(26)).chr }
+    3.times do |num|
+      rand_name << rand(10)
+    end
+    @name = rand_name.join
+    return @name
+  end
 
 end
 
