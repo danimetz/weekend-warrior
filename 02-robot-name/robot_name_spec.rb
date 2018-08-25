@@ -18,7 +18,6 @@ describe "Robot Name" do
   end
 
   it "Check that the name sticks" do
-    skip
     robot = Robot.new
     name  = robot.name
 
