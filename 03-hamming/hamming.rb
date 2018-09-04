@@ -1,11 +1,5 @@
 class Hamming
 
-  # attr_reader = :hamming_distance
-  # def initialize
-  #   @hamming_distance = 0
-  #
-  # end
-
   def self.compute(dna1, dna2)
     dna1 = dna1.split("")
     dna2 = dna2.split("")
