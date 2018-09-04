@@ -7,6 +7,9 @@ class Robot
 
   def initialize
     rand_name = (0..1).map { (65 + rand(26)).chr }
+    rand_num = (0..2).map { rand(10) }
+
+
     3.times do |num|
       rand_name << rand(10)
     end
@@ -20,6 +23,7 @@ class Robot
     3.times do |num|
       rand_name << rand(10)
     end
+
     @name = rand_name.join
     return @name
   end
