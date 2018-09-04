@@ -1,4 +1,8 @@
 gem 'minitest', '>= 5.0.0'
+########################
+require 'simplecov'
+SimpleCov.start
+########################
 require 'minitest/pride'
 require 'minitest/autorun'
 require_relative 'leap'
